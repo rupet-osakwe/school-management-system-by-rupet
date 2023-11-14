@@ -85,12 +85,17 @@
 .admin-welcome-message {
 	margin: 7px;
 	height: 70vh;
+	box-shadow: 3px 6px rgba(190, 55, 55, 0.2);
+	border: 1px solid black;
 }
 .response-message {
 	margin-left: 45px;
 	color: wheat;
 	height: 55vh;
 	margin-top: 20px;
+}
+.student-login-response {
+	width: 32%;
 }
 .errorMessage {
 	background-color: red;

@@ -37,7 +37,7 @@ const StudentAuth = () => {
     return (
         <div>
             <Heading />
-            {message ? (<div className="message"> {message}</div>) : (<div className="student-login-inputs">
+            {message ? (<div className="message student-login-response"> {message}</div>) : (<div className="student-login-inputs">
                 <h5 className="input-name">Student</h5>
                 <input type="text" placeholder="User Name..." onChange={(event) => { setUserName(event.target.value) }} />
                 <input type="email" placeholder="Email..." onChange={(event) => { setEmail(event.target.value) }} />
