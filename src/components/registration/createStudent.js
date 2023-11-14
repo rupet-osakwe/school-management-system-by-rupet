@@ -30,7 +30,7 @@ const UploadNewStudent = () => {
     return (
         <div className="container">
             <Heading />
-            {message ? (<div className="message studentUpload-response">{message} {studentInfo.firstName} {studentInfo.lastName}</div>) : (<div className="student-data-input">
+            {message ? (<div className="message response-message">{message} {studentInfo.firstName} {studentInfo.lastName}</div>) : (<div className="student-data-input">
                 <h5 className="input-name student-form-heading">Student's Registration Form</h5>
 
                 <input type="text" placeholder="User Name" name="userName" onChange={handleChange} />

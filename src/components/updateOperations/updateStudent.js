@@ -33,7 +33,7 @@ const UpdateStudent = () => {
     return (
         <div>
             <Heading />
-            {message ? (<div className="message">{message} {studentInfo.firstName} {studentInfo.lastName}</div>) : (<div className="student-data-input">
+            {message ? (<div className="message response-message">{message} {studentInfo.firstName} {studentInfo.lastName}</div>) : (<div className="student-data-input">
                 <h5 className="input-name">Update student</h5>
                 <input type="text" placeholder="Change Student's ID" name="id" value={studentInfo.id} onChange={handleChange} />
                 <input type="text" placeholder="Change User Name" name="userName" value={studentInfo.userName} onChange={handleChange} />

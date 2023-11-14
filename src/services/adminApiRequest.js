@@ -6,7 +6,7 @@ const axiosInstance = axios.create({ baseURL: process.env.REACT_APP_API_BASE_URL
 
 const adminLogin = async (userName, password, email) => {
     try {
-        const response = await axiosInstance.post('/AdminLogin', { userName, password, email }, { headers: authHeader() })
+        const response = await axiosInstance.post('/', { userName, password, email }, { headers: authHeader() })
         const AccessToken = response.data.AccessToken
         localStorage.setItem('AccessToken', JSON.stringify(AccessToken));
         console.log('response', response)

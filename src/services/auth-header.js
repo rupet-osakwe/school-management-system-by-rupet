@@ -4,7 +4,7 @@ const authHeader = () => {
     if (token) {
         try {
             const parsedToken = JSON.parse(token);
-            return { Authorization: 'Bearer ' + parsedToken };
+            return { authorization: 'Bearer ' + parsedToken };
         } catch (error) {
             console.error("Error parsing Access Token:", error);
             return {};
