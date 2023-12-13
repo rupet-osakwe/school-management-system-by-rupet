@@ -28,7 +28,6 @@ const UpDateStaff = () => {
                 const data = request;
                 setMessage('Staff information  Successfully Updated, Check registered email for details.');
                 console.log('response', data)
-                // setStaffDetails("")
                 return data
             }
             return
@@ -45,7 +44,7 @@ const UpDateStaff = () => {
     return (
         <div>
             <Heading />
-            {message ? (<div className="message response-message">{message}</div>) : (<div className="staff-update-inputs">
+            {message ? (<div className="message">{message}</div>) : (<div className="staff-update-inputs">
                 <h5 className="input-name">Update Staff Details</h5>
                 <input type="text" placeholder="ID" name="id" value={staffDetails.id} onChange={handleChange} />
                 <input type="text" placeholder="Change User Name" name="userName" value={staffDetails.userName} onChange={handleChange} />

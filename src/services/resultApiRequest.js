@@ -48,9 +48,9 @@ const deleteResult = async (id) => {
 const fetchOneResult = async (_id) => {
     console.log("id", _id)
     try {
-        const response = await axiosInstance.get(`/resultBase:${_id}`)
+        const response = await axiosInstance.get(`/resultBase/${_id}`)
         console.log(response)
-        return response.data
+        return response
     } catch (err) {
         console.log(err)
     }

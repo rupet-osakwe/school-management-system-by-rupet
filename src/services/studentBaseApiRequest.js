@@ -13,9 +13,9 @@ const fetchAllStudents = async () => {
         console.log(err)
     }
 };
-const createNewStudent = async ({ userName, email, firstName, lastName, dateOfBirth, studentClass }) => {
+const createNewStudent = async ({ userName, email, firstName, lastName, dateOfBirth, studentClass, gender, fathersName, fathersPhoneNumber, mothersName, mothersPhoneNumber, homeAddress }) => {
     try {
-        const response = await axiosInstance.post('/studentBase', { userName, email, firstName, lastName, dateOfBirth, studentClass }, { headers: authHeader() });
+        const response = await axiosInstance.post('/studentBase', { userName, email, firstName, lastName, dateOfBirth, studentClass, gender, fathersName, fathersPhoneNumber, mothersName, mothersPhoneNumber, homeAddress }, { headers: authHeader() });
         return response
     } catch (err) {
         console.log(err)
@@ -31,9 +31,9 @@ const logIn = async (userName, email) => {
         console.log(err)
     }
 }
-const updateStudent = async ({ id, userName, email, firstName, lastName, dateOfBirth, studentClass }) => {
+const updateStudent = async ({ id, userName, email, firstName, lastName, dateOfBirth, studentClass, gender, fathersName, fathersPhoneNumber, mothersName, mothersPhoneNumber, homeAddress }) => {
     try {
-        const response = await axiosInstance.put('/studentBase', { id, userName, email, firstName, lastName, dateOfBirth, studentClass }, { headers: authHeader() });
+        const response = await axiosInstance.put('/studentBase', { id, userName, email, firstName, lastName, dateOfBirth, studentClass, gender, fathersName, fathersPhoneNumber, mothersName, mothersPhoneNumber, homeAddress }, { headers: authHeader() });
         return response;
     } catch (err) {
         console.log(err)
@@ -43,9 +43,9 @@ const deleteStudent = async (id) => {
     const response = await axiosInstance.delete(`/studentBase/${id}`, { headers: authHeader() })
     return response
 }
-const fetchOneStudent = async (_id) => {
+const fetchOneStudent = async (id) => {
     try {
-        const response = await axiosInstance.get(`/studentBase/${_id}`)
+        const response = await axiosInstance.get(`/studentBase/${id}`)
         console.log(response.data)
         return response.data
     } catch (err) {

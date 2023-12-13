@@ -11,22 +11,21 @@ const StaffHomePage = () => {
             <Heading />
             <div className='staff-nav-bar'>
                 <div className='staff-nav-bar-left'>
-                    <Link to="/StaffLogin" className='single-nav'>staffLogIn</Link>
-                    <Link to="/ResultUpload" className='single-nav'>ResultUpload</Link>
-                    <Link to="/StudentReg" className='single-nav'>StudentReg</Link>
-                    <Link to="/ResultsCheck" className='single-nav'>CheckResults</Link>
-                    <Link to="/StudentInfos" className='single-nav'>StudentInfo</Link>
-                    <Link to="/StaffDetails" className='single-nav'>StaffInfo</Link>
+                    <Link to="/ResultUpload" className='single-nav'>Upload result</Link>
+                    <Link to="/StudentReg" className='single-nav'>Reg student</Link>
+                    <Link to="/ResultsCheck" className='single-nav'>view-results</Link>
+                    <Link to="/StudentInfos" className='single-nav'>All-students</Link>
+                    <Link to="/StaffDetails" className='single-nav'>All staffs</Link>
+                    <Link to="/DeleteStudent" className='single-nav'>DeleteStudent</Link>
                 </div>
                 <div className='message staff-online-message'>{message}</div>
                 <div className='staff-nav-bar-right'>
                     <Link to="/UpdateResult" className='single-nav'>UpdateResult</Link>
-                    <Link to="/UpdateStudentDetails" className='single-nav'>UpdateStudentDetails</Link>
-                    <Link to="/DeleteStudent" className='single-nav'>DeleteStudent</Link>
+                    <Link to="/UpdateStudentDetails" className='single-nav'>Update-student</Link>
                     <Link to="/DeleteResult" className='single-nav'>DeleteResult</Link>
-                    <Link to="/check-a-result" className='single-nav'>check-a-result</Link>
-                    <Link to="/CheckAStudentData" className='single-nav'>CheckAStudentData</Link>
-                    <Link to="/CheckAStaffData" className='single-nav'>CheckAStaffData</Link>
+                    <Link to="/check-a-result" className='single-nav'>view-result</Link>
+                    <Link to="/CheckAStudentData" className='single-nav'>view-student</Link>
+                    <Link to="/CheckAStaffData" className='single-nav'>view-staff</Link>
                 </div>
             </div>
 

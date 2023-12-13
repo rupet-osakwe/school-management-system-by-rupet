@@ -1,6 +1,7 @@
 import React from 'react'
 import graduating_students from '../images/graduating_students.jpg'
 import '../App.css'
+import { Link } from 'react-router-dom';
 import Heading from './header';
 
 const Home = () => {
@@ -31,10 +32,15 @@ const Home = () => {
                     Many wonder why we do not place much emphasis on advertisement in respect of our school and yet students keep coming from various part of the country. A Chief Executive of a leading restaurant remarked "To me marketing starts with having a good product. You could do the best marketing with a bad product, it might still not succeed, although it may work for some time but it will surely wane. But with a good product, a small push will bring you to a pool".
                 </p>
 
-                We look forward to you joining us and be a part of this great history making.
+                We look forward to you joining us and be a part of this great history making by clicking on the registration link bellow.
+
+                <div>
+
+                    <Link to="/StudentReg" className="">Registration Form</Link>
+                </div>
             </div>
 
-            <h5 className="input-name"> CODE OF CONDUCT</h5>
+            <h5 className="input-name code-of-conduct-heading"> CODE OF CONDUCT</h5>
             <div className='code-of-conduct'>
 
                 In general we expect our students to be responsible members of the community and ambassadors for Grace And Truth Academy. Students are expected to:

@@ -47,7 +47,7 @@ const UploadResult = () => {
         <div>
             <Heading />
             {!message ? (<div className="resultInputs">
-                <h3 className="input-name">Result Upload</h3>
+                <div className="input-name">Result Upload</div>
                 <input type="text" placeholder="First Name" name="firstName" value={resultDetails.firstName} onChange={handleChange} />
                 <input type="text" placeholder="Last Name" name="lastName" value={resultDetails.lastName} onChange={handleChange} />
                 <input type="text" placeholder="Term" name="term" value={resultDetails.term} onChange={handleChange} />

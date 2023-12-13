@@ -7,7 +7,7 @@ import LandingPage from '../gates/home';
 
 const Heading = () => {
     return (
-        <div>
+        <div className='header-container'>
             <div className='homeAndLogo'>
                 <MdAnchor className='logo' /><h4>Grace And Truth Academy, Lagos.  <span className='motto'>MOTTO: CHRIST IN ME...</span></h4>
             </div>

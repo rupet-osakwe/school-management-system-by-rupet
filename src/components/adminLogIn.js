@@ -38,7 +38,6 @@ export const AdminAuth = () => {
         } catch (err) {
             console.log(err.message);
             throw (err)
-            // setTimeout(() => setErrorMessage(err), 2500)
             return;
         }
     }

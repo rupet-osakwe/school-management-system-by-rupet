@@ -35,14 +35,16 @@ const StaffAuth = () => {
     return (
         <div>
             <Heading />
+            {errorMessage ? (<div className="errorMessage">{errorMessage}</div>) : ("")}
             {message ? (<div>{message}</div>) : (<div className="staff-login-inputs">
                 <h5 className="input-name">Staff</h5>
+
                 <input type="text" placeholder="User Name..." onChange={(event) => { setUserName(event.target.value) }} />
                 <input type="email" placeholder="Email..." onChange={(event) => { setEmail(event.target.value) }} />
                 <button className="log-in-button" onClick={handleLogin}>Login</button>
-            </div >)}
-            {errorMessage ? (<div>{errorMessage}</div>) : ("")}
-        </div>
+            </div >)
+            }
+        </div >
     )
 
 }
