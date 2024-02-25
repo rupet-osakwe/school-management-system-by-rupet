@@ -17,7 +17,7 @@ const StudentHomePage = () => {
                     <Link to="/CheckAStudentData" className='single-nav'>View Student</Link>
                     <Link to="/ResultsCheck" className='single-nav'>View Results</Link>
                 </div>
-                <div className='message student-online-message'>{message}</div>
+                <div className='student-online-message'>{message}</div>
                 <div className='student-nav-bar-right'>
                     <Link to="/StaffDetails" className='single-nav'>All Staffs</Link>
                     <Link to="/UpdateStudentDetails" className='single-nav'>UpdateStudent</Link>
